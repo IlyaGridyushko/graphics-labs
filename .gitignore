@@ -1,0 +1,63 @@
+# directories
+*/build/
+*/.cache/
+*/.vscode/
+lab1/third_party/  
+lab1/shaders/
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.cache
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Package managers
+vcpkg_installed/
+packages/
+node_modules/
+
+# OpenGL/Graphics specific
+*.dmp
+*.stackdump
+
+# Shader compilation artifacts
+*.spv
+*.spirv
+
+# Asset cache
+.cache/
+assets/cache/
+
+# Profiling
+*.prof
+*.gmon
+
+# Documentation build
+docs/_build/
+doxygen_output/
+
+# Testing
+Testing/
+CTestCostData.txt
+
+# Backup files
+*.bak
+*.backup
