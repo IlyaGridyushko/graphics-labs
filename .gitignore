@@ -4,6 +4,7 @@
 */.vscode/
 lab1/third_party/  
 lab1/shaders/
+lab2/third_party_local/
 
 # Executables
 *.exe
