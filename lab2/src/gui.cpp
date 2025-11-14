@@ -324,7 +324,7 @@ void ImageProcessingGUI::renderImageWindow(const char* title, GLuint texture,
         displayWidth = displayHeight * aspectRatio;
     }
     
-    ImGui::Image(reinterpret_cast<ImTextureID>(static_cast<intptr_t>(texture)), 
+    ImGui::Image((void*)(intptr_t)texture, 
                  ImVec2(displayWidth, displayHeight),
                  ImVec2(0, 0), ImVec2(1, 1));
     

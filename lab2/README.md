@@ -52,6 +52,28 @@ This application implements various digital image processing algorithms includin
 
 ## Building the Application
 
+### System Requirements
+- Linux (Ubuntu 20.04+ recommended) or other Unix-like system
+- CMake 3.19 or higher
+- C++17 compatible compiler (GCC 9+ or Clang 10+)
+- Python 3 (for dependency setup)
+- Git
+
+### Dependencies
+The following libraries are required:
+- OpenGL 4.6
+- GLFW3 (for windowing)
+- GLM (for math)
+- GLAD (OpenGL loader) - auto-downloaded by setup script
+- ImGui (for GUI) - auto-downloaded by setup script
+- STB Image (for image I/O) - auto-downloaded by setup script
+
+Install system dependencies on Ubuntu/Debian:
+```bash
+sudo apt-get update
+sudo apt-get install -y libgl1-mesa-dev libglu1-mesa-dev libglfw3-dev libglm-dev build-essential cmake python3 python3-pip git
+```
+
 ### Requirements
 - CMake 3.19 or higher
 - C++17 compatible compiler
@@ -61,6 +83,24 @@ This application implements various digital image processing algorithms includin
 - vcpkg (recommended for dependency management)
 
 ### Build Instructions
+
+First, run the setup script to download dependencies:
+
+```bash
+cd lab2
+./setup_dependencies.sh
+```
+
+Then build the project:
+
+```bash
+mkdir build && cd build
+cmake ..
+cmake --build .
+./lab2
+```
+
+Alternatively, if you have vcpkg installed, you can use it for dependency management:
 
 ```bash
 cd lab2
